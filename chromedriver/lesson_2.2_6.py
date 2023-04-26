@@ -36,11 +36,10 @@ robotsRule = browser.find_element(By.ID, "robotsRule")
 browser.execute_script("return arguments[0].scrollIntoView(true);", robotsRule)
 robotsRule.click()
 
-## Нажать на кнопку Отправить
+# Нажать на кнопку Отправить
 button = browser.find_element(By.CSS_SELECTOR, "button.btn")
 button.click()
+
 time.sleep(5)
 browser.close()
 browser.quit()
-print(os.path.abspath(__file__)) # Полный путь файла
-print(os.path.abspath(os.path.dirname(__file__))) # Путь до файла

@@ -36,6 +36,7 @@ answer.send_keys(y)
 # Нажать на кнопку Отправить
 button = browser.find_element(By.ID, "solve")
 button.click()
+
 time.sleep(5)
 browser.close()
 

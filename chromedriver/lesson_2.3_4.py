@@ -34,5 +34,6 @@ answer.send_keys(y)
 # Нажать на кнопку Отправить
 button = brow.find_element(By.CSS_SELECTOR, "button.btn")
 button.click()
+
 time.sleep(5)
 brow.close()

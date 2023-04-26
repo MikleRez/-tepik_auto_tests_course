@@ -17,6 +17,7 @@ current_dir = os.path.abspath(os.path.dirname(__file__))  # получаем п�
 file_path = os.path.join(current_dir, 'test.txt')  # добавляем к этому пути имя файла
 print(file_path)
 Choose_file.send_keys(file_path)
+
 # Нажать на кнопку Отправить
 button = browser.find_element(By.CSS_SELECTOR, "button.btn")
 button.click()

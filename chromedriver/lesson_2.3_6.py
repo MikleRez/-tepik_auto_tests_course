@@ -13,11 +13,9 @@ with webdriver.Chrome() as browser:
     first_window = browser.window_handles[0]  # Запомнили предыдущую вкладку на всякий случай
     browser.switch_to.window(new_window)  # Переключились на новую вкладку
 
-
     # Описать функцию
     def calc(x):
         return str(math.log(abs(12 * math.sin(int(x)))))
-
 
     # Считать значение x
     x_element = browser.find_element(By.ID, "input_value")
@@ -33,5 +31,6 @@ with webdriver.Chrome() as browser:
     # Нажать на кнопку Отправить
     button = browser.find_element(By.CSS_SELECTOR, "button.btn")
     button.click()
+
     time.sleep(5)
     browser.close()
